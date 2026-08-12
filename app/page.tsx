@@ -190,31 +190,38 @@ export default function Home() {
           <div className="grid gap-4">
             {[
               {
+                role: "Production Engineering Fellow",
+                company: "Meta",
+                period: "Jun-Sep 2026",
+                details: "Built reliable infrastructure (~2% acceptance rate)",
+                skills: ["Python", "Bash", "Docker", "Docker Compose", "Flask", "MySQL", "systemd", "Nginx", "Linux", "CI/CD", "Monitoring"],
+              },
+              {
                 role: "Software Engineering Intern",
                 company: "Symmetry Commerce",
                 period: "May-Aug 2026",
-                details: "Shopify Plus partner.",
+                details: "Shopify Plus partner",
                 skills: [],
               },
               {
                 role: "Software Engineering Intern",
                 company: "Kenna Technologies",
                 period: "Sep-Dec 2025",
-                details: "Full stack app dev.",
+                details: "Full stack app dev",
                 skills: ["TypeScript", "React", "Node.js", "JavaScript", "SQL", "IBM", "AWS", "Jenkins"],
               },
               {
                 role: "Software Engineer",
                 company: "Electrium Mobility",
                 period: "Apr-Dec 2025",
-                details: "Building Electrimap.",
+                details: "Building Electrimap",
                 skills: ["TypeScript","Next.js", "Firebase", "Cloud Firestore"],
               },
               {
                 role: "Engineering Intern",
                 company: "Sable",
                 period: "Jan-Apr 2025",
-                details: "PM & Data.",
+                details: "PM & Data",
                 skills: [
                   "Data",
                   "SQL",
@@ -236,7 +243,7 @@ export default function Home() {
                   {item.period ? <span className="text-xs text-violet-200">{item.period}</span> : null}
                 </div>
                 <p className="mt-1 text-xs text-slate-300">{item.company}</p>
-                <p className="mt-2 text-xs leading-relaxed text-slate-300/90">{item.details}</p>
+                <p className="mt-2 text-xs leading-relaxed text-slate-500">{item.details}</p>
                 {/* {item.skills.length > 0 ? (
                   <div className="mt-3 border-t border-white/10 pt-2.5">
                     <p className="mb-1.5 text-[10px] font-semibold tracking-[0.14em] text-violet-200 uppercase">
